@@ -29,7 +29,7 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         plus_equal: plus_equal {
@@ -38,7 +38,7 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp LS(EQUAL)>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         bracket_left: bracket_left {
@@ -47,7 +47,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp LS(LEFT_BRACKET)>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         bracket_right: bracket_right {
@@ -56,7 +56,7 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACKET>, <&kp LS(RIGHT_BRACKET)>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
     };
 
