@@ -19,6 +19,6 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DZMK_SPLIT_ROLE_CENTRAL=y
     artifact-name: lily58_left_with_studio
   - board: nice_nano_v2
-    shield: lily58_right
+    shield: lily58_right nice_view_adapter nice_view
     cmake-args: -DZMK_SPLIT_ROLE_PERIPHERAL=y
     artifact-name: lily58_right
