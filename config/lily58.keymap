@@ -9,6 +9,13 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <80>;
+    bindings = <&kp>, <&kp>;
+
+    quick-tap-ms = <60>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -60,9 +67,7 @@
         };
     };
 
-    chosen {
-		zephyr,console = &cdc_acm_uart;
-	};
+    chosen { zephyr,console = &cdc_acm_uart; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -77,11 +82,11 @@
 
             display-name = "Base";
             bindings = <
-&mt LS(LA(LCTRL)) GRAVE     &kp N1  &kp N2  &kp N3         &kp N4        &kp N5                         &kp N6  &kp N7        &kp N8       &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB                     &kp Q   &kp W   &kp E          &kp R         &kp T                          &kp Y   &kp U         &kp I        &kp O    &kp P     &kp NON_US_BACKSLASH
-&mt LEFT_SHIFT ESCAPE       &kp A   &kp S   &kp D          &kp F         &kp G                          &kp H   &kp J         &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X   &kp C          &kp V         &kp B   &bracket_left     &bracket_right  &kp N   &kp M         &kp COMMA    &kp DOT  &kp FSLH  &kp ENTER
-                                            &kp LEFT_META  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp RET   &mo 2   &minus_under  &plus_equal
+&mt LS(LA(LCTRL)) GRAVE  &kp N1  &kp N2  &kp N3         &kp N4        &kp N5                                   &kp N6  &kp N7        &kp N8       &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB                  &kp Q   &kp W   &kp E          &kp R         &kp T                                    &kp Y   &kp U         &kp I        &kp O    &kp P     &kp NON_US_BACKSLASH
+&mt LEFT_SHIFT ESCAPE    &kp A   &kp S   &kp D          &kp F         &kp G                                    &kp H   &kp J         &kp K        &kp L    &kp SEMI  &kp SQT
+&kp LCTRL                &kp Z   &kp X   &kp C          &kp V         &kp B   &bracket_left    &bracket_right  &kp N   &kp M         &kp COMMA    &kp DOT  &kp FSLH  &kp ENTER
+                                         &kp LEFT_META  &kp LEFT_ALT  &mo 1   &kp SPACE        &kp RET         &mo 2   &minus_under  &plus_equal
             >;
         };
 
@@ -130,10 +135,12 @@
 };
 
 // Allow USB logging
+
 &usbd {
-	status = "okay";
-	cdc_acm_uart: cdc_acm_uart {
-		compatible = "zephyr,cdc-acm-uart";
-		label = "CDC_ACM_0";
-	};
+    status = "okay";
+
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+        label = "CDC_ACM_0";
+    };
 };
