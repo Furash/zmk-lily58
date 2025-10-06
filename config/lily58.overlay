@@ -29,3 +29,4 @@ nice_view_spi: &spi0 {
     cs-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;  // P0.22 (D4) CS pin - Lily58 Pro actual wiring
 };
 
+
