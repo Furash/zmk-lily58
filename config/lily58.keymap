@@ -36,7 +36,7 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <120>;
         };
 
         plus_equal: plus_equal {
@@ -45,7 +45,7 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp LS(EQUAL)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <120>;
         };
 
         bracket_left: bracket_left {
@@ -54,7 +54,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp LS(LEFT_BRACKET)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <120>;
         };
 
         bracket_right: bracket_right {
@@ -63,11 +63,9 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACKET>, <&kp LS(RIGHT_BRACKET)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <120>;
         };
     };
-
-    chosen { zephyr,console = &cdc_acm_uart; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -131,16 +129,5 @@
         extra_2 { status = "reserved"; };
 
         extra_3 { status = "reserved"; };
-    };
-};
-
-// Allow USB logging
-
-&usbd {
-    status = "okay";
-
-    cdc_acm_uart: cdc_acm_uart {
-        compatible = "zephyr,cdc-acm-uart";
-        label = "CDC_ACM_0";
     };
 };
