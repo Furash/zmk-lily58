@@ -108,11 +108,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp GRAVE  &kp F1    &kp F2    &kp F3                  &kp F4                      &kp F5                                &kp F6    &kp F7             &kp F8          &kp F9          &kp F10          &kp DEL
-&trans     &kp N0    &kp UP    &kp RET                 &kp EQUAL                   &kp TILDE                             &none     &kp UNDERSCORE     &kp INSERT      &kp SCROLLLOCK  &kp PRINTSCREEN  &none
-&trans     &kp LEFT  &kp DOWN  &kp RIGHT               &kp MINUS                   &kp GRAVE                             &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP     &kp END         &kp CAPSLOCK     &none
-&trans     &kp BSPC  &kp DEL   &kp LC(LA(LEFT_SHIFT))  &kp LC(LG(LA(LEFT_SHIFT)))  &kp F13    &kp F11     &kp F12        &none     &kp K_APPLICATION  &kp C_PREVIOUS  &kp C_NEXT      &kp C_PAUSE      &kp KP_ENTER
-                               &trans                  &trans                      &trans     &kp BSPC    &kp LS(UNDER)  &trans    &trans             &trans
+&kp GRAVE  &kp F1    &kp F2    &kp F3                  &kp F4                      &kp F5                                &kp F6         &kp F7             &kp F8          &kp F9          &kp F10          &kp DEL
+&trans     &kp N0    &kp UP    &kp RET                 &kp EQUAL                   &kp TILDE                             &none          &kp UNDERSCORE     &kp INSERT      &kp SCROLLLOCK  &kp PRINTSCREEN  &none
+&trans     &kp LEFT  &kp DOWN  &kp RIGHT               &kp MINUS                   &kp GRAVE                             &kp HOME       &kp PAGE_DOWN      &kp PAGE_UP     &kp END         &kp CAPSLOCK     &none
+&trans     &kp BSPC  &kp DEL   &kp LC(LA(LEFT_SHIFT))  &kp LC(LG(LA(LEFT_SHIFT)))  &kp F13    &kp F11     &kp F12        &none          &kp K_APPLICATION  &kp C_PREVIOUS  &kp C_NEXT      &kp C_PAUSE      &kp KP_ENTER
+                               &trans                  &trans                      &trans     &kp BSPC    &kp LS(UNDER)  &kp LEFT_META  &kp LEFT_ALT       &kp RCTRL
             >;
         };
 
