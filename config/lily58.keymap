@@ -68,6 +68,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
+
+        TD_TO3: TD_TO3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_TO3";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&to 3>;
+        };
     };
 
     keymap {
@@ -83,11 +90,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE      &kp N1  &kp N2  &kp N3         &kp N4        &kp N5                                     &kp N6  &kp N7        &kp N8       &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q   &kp W   &kp E          &kp R         &kp T                                      &kp Y   &kp U         &kp I        &kp O    &kp P     &kp BACKSLASH
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D          &kp F         &kp G                                      &kp H   &kp J         &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z   &kp X   &kp C          &kp V         &kp B    &bracket_left    &bracket_right   &kp N   &kp M         &kp COMMA    &kp DOT  &kp FSLH  &kp ENTER
-                                &kp LEFT_META  &kp LEFT_ALT  &TD_MO1  &kp SPACE        &TD_Shift_CWord  &mo 2   &minus_under  &plus_equal
+&kp ESCAPE      &kp N1  &kp N2  &kp N3         &kp N4        &kp N5                                     &kp N6   &kp N7        &kp N8       &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB         &kp Q   &kp W   &kp E          &kp R         &kp T                                      &kp Y    &kp U         &kp I        &kp O    &kp P     &kp BACKSLASH
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D          &kp F         &kp G                                      &kp H    &kp J         &kp K        &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z   &kp X   &kp C          &kp V         &kp B    &bracket_left    &bracket_right   &kp N    &kp M         &kp COMMA    &kp DOT  &kp FSLH  &kp ENTER
+                                &kp LEFT_META  &kp LEFT_ALT  &TD_MO1  &kp SPACE        &TD_Shift_CWord  &TD_TO3  &minus_under  &plus_equal
             >;
         };
 
@@ -101,11 +108,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp GRAVE  &kp F1    &kp F2    &kp F3                  &kp F4                      &kp F5                                &kp F6    &kp F7          &kp F8          &kp F9          &kp F10          &kp DEL
-&trans     &kp N0    &kp UP    &kp RET                 &kp EQUAL                   &kp TILDE                             &none     &kp UNDERSCORE  &kp INSERT      &kp SCROLLLOCK  &kp PRINTSCREEN  &none
-&trans     &kp LEFT  &kp DOWN  &kp RIGHT               &kp MINUS                   &kp GRAVE                             &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &none            &none
-&trans     &kp BSPC  &kp DEL   &kp LC(LA(LEFT_SHIFT))  &kp LC(LG(LA(LEFT_SHIFT)))  &kp F13    &kp F11     &kp F12        &none     &none           &kp C_PREVIOUS  &kp C_NEXT      &kp C_PAUSE      &kp KP_ENTER
-                               &trans                  &trans                      &trans     &kp BSPC    &kp LS(UNDER)  &trans    &trans          &trans
+&kp GRAVE  &kp F1    &kp F2    &kp F3                  &kp F4                      &kp F5                                &kp F6    &kp F7             &kp F8          &kp F9          &kp F10          &kp DEL
+&trans     &kp N0    &kp UP    &kp RET                 &kp EQUAL                   &kp TILDE                             &none     &kp UNDERSCORE     &kp INSERT      &kp SCROLLLOCK  &kp PRINTSCREEN  &none
+&trans     &kp LEFT  &kp DOWN  &kp RIGHT               &kp MINUS                   &kp GRAVE                             &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP     &kp END         &kp CAPSLOCK     &none
+&trans     &kp BSPC  &kp DEL   &kp LC(LA(LEFT_SHIFT))  &kp LC(LG(LA(LEFT_SHIFT)))  &kp F13    &kp F11     &kp F12        &none     &kp K_APPLICATION  &kp C_PREVIOUS  &kp C_NEXT      &kp C_PAUSE      &kp KP_ENTER
+                               &trans                  &trans                      &trans     &kp BSPC    &kp LS(UNDER)  &trans    &trans             &trans
             >;
         };
 
@@ -123,15 +130,19 @@
 &trans          &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                    &kp KP_MULTIPLY  &kp N4            &kp N5             &kp N6  &kp KP_PLUS   &none
 &trans          &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)                     &none            &kp N1            &kp N2             &kp N3  &none         &none
 &trans          &none          &none         &none          &none         &none          &trans    &trans  &kp KP_NUMLOCK   &kp N0            &kp DOT            &none   &none         &kp KP_ENTER
-                                             &trans         &trans        &trans         &trans    &trans  &trans           &ext_power EP_ON  &ext_power EP_OFF
+                                             &trans         &trans        &sl 3          &trans    &trans  &trans           &ext_power EP_ON  &ext_power EP_OFF
             >;
         };
 
-        extra_1 { status = "reserved"; };
-
-        extra_2 { status = "reserved"; };
-
-        extra_3 { status = "reserved"; };
+        SL_3 {
+            bindings = <
+&trans  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp LA(F4)  &kp LA(F5)                    &kp STAR  &kp N7  &kp N8   &kp N9   &trans  &trans
+&trans  &trans      &trans      &trans      &trans      &trans                        &kp BSLH  &kp N4  &kp N5   &kp N6   &trans  &trans
+&trans  &trans      &trans      &trans      &trans      &trans                        &trans    &kp N1  &kp N2   &kp N3   &trans  &trans
+&trans  &trans      &trans      &trans      &trans      &trans      &trans    &trans  &trans    &kp N0  &kp DOT  &kp RET  &trans  &trans
+                                &trans      &trans      &trans      &trans    &trans  &to 0     &trans  &trans
+            >;
+        };
     };
 };
 
