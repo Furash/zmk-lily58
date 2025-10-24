@@ -150,6 +150,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <24 25>;
         };
+
+        CMB_PIPE {
+            bindings = <&kp PIPE>;
+            key-positions = <37 38>;
+        };
     };
 
     keymap {
