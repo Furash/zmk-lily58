@@ -77,6 +77,81 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CMB_PLUS {
+            bindings = <&kp PLUS>;
+            key-positions = <14 15>;
+            layers = <0>;
+        };
+
+        CMB_MINUS {
+            bindings = <&kp MINUS>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+
+        CMB_EQUALS {
+            bindings = <&kp EQUAL>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        CMB_LEFT_PAREN {
+            bindings = <&kp LS(LEFT_PARENTHESIS)>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        CMB_RIGHT_PAREN {
+            bindings = <&kp LS(RIGHT_PARENTHESIS)>;
+            key-positions = <38 39>;
+            layers = <0>;
+        };
+
+        CMB_LEFT_BRACKET {
+            bindings = <&kp LS(LEFT_BRACKET)>;
+            key-positions = <27 28>;
+            layers = <0>;
+        };
+
+        CMB_RIGHT_BRACKET {
+            bindings = <&kp LS(RIGHT_BRACKET)>;
+            key-positions = <39 40>;
+            layers = <0>;
+        };
+
+        CMB_LEFT_BRACE {
+            bindings = <&kp LS(LEFT_BRACE)>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        CMB_RIGHT_BRACE {
+            bindings = <&kp LS(RIGHT_BRACE)>;
+            key-positions = <40 41>;
+            layers = <0>;
+        };
+
+        CMB_GRAVE {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        CMB_TILDE {
+            bindings = <&kp TILDE>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        CMB_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <24 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -126,11 +201,11 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                     &kp KP_DIVIDE    &kp N7            &kp N8             &kp N9  &kp KP_MINUS  &kp BACKSPACE
-&trans          &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                    &kp KP_MULTIPLY  &kp N4            &kp N5             &kp N6  &kp KP_PLUS   &none
-&trans          &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)                     &none            &kp N1            &kp N2             &kp N3  &none         &none
-&trans          &none          &none         &none          &none         &none          &trans    &trans  &kp KP_NUMLOCK   &kp N0            &kp DOT            &none   &none         &kp KP_ENTER
-                                             &trans         &trans        &sl 3          &trans    &trans  &trans           &ext_power EP_ON  &ext_power EP_OFF
+&bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                     &kp KP_NUMLOCK  &kp N7            &kp N8             &kp N9   &kp KP_MINUS  &kp BACKSPACE
+&trans          &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                    &kp PERCENT     &kp N4            &kp N5             &kp N6   &kp KP_PLUS   &kp KP_DIVIDE
+&trans          &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)                     &none           &kp N1            &kp N2             &kp N3   &kp KP_MINUS  &kp KP_MULTIPLY
+&trans          &none          &none         &none          &none         &none          &trans    &trans  &kp KP_NUMLOCK  &kp N0            &kp N0             &kp DOT  &kp KP_ENTER  &kp KP_ENTER
+                                             &trans         &trans        &sl 3          &trans    &trans  &trans          &ext_power EP_ON  &ext_power EP_OFF
             >;
         };
 
