@@ -82,24 +82,24 @@
 
         CMB_PLUS {
             bindings = <&kp PLUS>;
-            key-positions = <14 15>;
+            key-positions = <>;
             layers = <0>;
         };
 
         CMB_MINUS {
             bindings = <&kp MINUS>;
-            key-positions = <15 16>;
+            key-positions = <>;
             layers = <0>;
         };
 
         CMB_EQUALS {
             bindings = <&kp EQUAL>;
-            key-positions = <16 17>;
+            key-positions = <>;
             layers = <0>;
         };
 
-        CMB_LEFT_PAREN {
-            bindings = <&kp LS(LEFT_PARENTHESIS)>;
+        CMB_TAB {
+            bindings = <&kp LS(TAB)>;
             key-positions = <26 27>;
             layers = <0>;
         };
@@ -112,19 +112,19 @@
 
         CMB_LEFT_BRACKET {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <27 28>;
+            key-positions = <37 38>;
             layers = <0>;
         };
 
         CMB_RIGHT_BRACKET {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <39 40>;
+            key-positions = <38 39>;
             layers = <0>;
         };
 
         CMB_LEFT_BRACE {
             bindings = <&kp LS(LEFT_BRACE)>;
-            key-positions = <28 29>;
+            key-positions = <40 39>;
             layers = <0>;
         };
 
