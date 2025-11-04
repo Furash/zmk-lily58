@@ -136,7 +136,7 @@
         };
 
         CMB_C_DELETE {
-            bindings = <&kp DELETE>;
+            bindings = <&kp LC(DELETE)>;
             key-positions = <19 21>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
@@ -145,7 +145,7 @@
         CMB_WIN_DOT {
             bindings = <&kp LG(KP_DOT)>;
             key-positions = <42 43>;
-            timeout-ms = <20>;
+            timeout-ms = <200>;
             require-prior-idle-ms = <100>;
         };
     };
