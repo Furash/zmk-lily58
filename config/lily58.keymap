@@ -163,7 +163,7 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE      &kp N1  &kp N2  &kp N3         &kp N4        &kp N5                                             &kp N6       &kp N7        &kp N8       &kp N9   &kp N0    &bracket_left
+&kp GRAVE       &kp N1  &kp N2  &kp N3         &kp N4        &kp N5                                             &kp N6       &kp N7        &kp N8       &kp N9   &kp N0    &bracket_left
 &kp TAB         &kp Q   &kp W   &kp E          &kp R         &kp T                                              &kp Y        &kp U         &kp I        &kp O    &kp P     &kp BACKSLASH
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D          &kp F         &kp G                                              &kp H        &kp J         &kp K        &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z   &kp X   &kp C          &kp V         &kp B        &kp LS(LA(LCTRL))    &mo 3            &kp N        &kp M         &kp COMMA    &kp DOT  &kp FSLH  &bracket_right
@@ -181,7 +181,7 @@
 
             display-name = "Lower";
             bindings = <
-&kp GRAVE  &kp F1    &kp F2    &kp F3     &kp F4     &kp F5                                &kp F6         &kp F7             &kp F8          &kp F9          &kp F10          &kp DEL
+&kp TILDE  &kp F1    &kp F2    &kp F3     &kp F4     &kp F5                                &kp F6         &kp F7             &kp F8          &kp F9          &kp F10          &kp DEL
 &trans     &kp N0    &kp UP    &kp RET    &kp EQUAL  &kp TILDE                             &none          &kp UNDERSCORE     &kp INSERT      &kp SCROLLLOCK  &kp PRINTSCREEN  &none
 &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &kp MINUS  &kp GRAVE                             &kp HOME       &kp PAGE_DOWN      &kp PAGE_UP     &kp END         &kp CAPSLOCK     &none
 &trans     &kp BSPC  &kp DEL   &kp F11    &kp F12    &kp F13    &kp F14     &kp F15        &none          &kp K_APPLICATION  &kp C_PREVIOUS  &kp C_NEXT      &kp C_PAUSE      &kp KP_ENTER
