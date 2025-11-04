@@ -80,57 +80,9 @@
     combos {
         compatible = "zmk,combos";
 
-        CMB_PLUS {
-            bindings = <&kp PLUS>;
-            key-positions = <>;
-            layers = <0>;
-        };
-
-        CMB_MINUS {
-            bindings = <&kp MINUS>;
-            key-positions = <>;
-            layers = <0>;
-        };
-
-        CMB_EQUALS {
-            bindings = <&kp EQUAL>;
-            key-positions = <>;
-            layers = <0>;
-        };
-
         CMB_TAB {
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp TAB>;
             key-positions = <26 27>;
-            layers = <0>;
-        };
-
-        CMB_RIGHT_PAREN {
-            bindings = <&kp LS(RIGHT_PARENTHESIS)>;
-            key-positions = <38 39>;
-            layers = <0>;
-        };
-
-        CMB_LEFT_BRACKET {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <37 38>;
-            layers = <0>;
-        };
-
-        CMB_RIGHT_BRACKET {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <38 39>;
-            layers = <0>;
-        };
-
-        CMB_LEFT_BRACE {
-            bindings = <&kp LS(LEFT_BRACE)>;
-            key-positions = <40 39>;
-            layers = <0>;
-        };
-
-        CMB_RIGHT_BRACE {
-            bindings = <&kp LS(RIGHT_BRACE)>;
-            key-positions = <40 41>;
             layers = <0>;
         };
 
@@ -151,9 +103,26 @@
             key-positions = <28 31>;
         };
 
-        CMB_PIPE {
-            bindings = <&kp PIPE>;
-            key-positions = <37 38>;
+        CMB_BACKSPACE {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <31 32>;
+        };
+
+        CMB_C_BACKSPACE {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <31 33>;
+        };
+
+        CMB_S_TAB {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <27 25>;
+            layers = <0>;
+        };
+
+        CMB_ENTER {
+            bindings = <&kp ENTER>;
+            key-positions = <27 28>;
+            layers = <0>;
         };
     };
 
