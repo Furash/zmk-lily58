@@ -12,5 +12,8 @@ manifest:
     - name: nice-view-gem
       remote: Furash 
       revision: main 
+    - name: lvgl
+    remote: zmkfirmware
+    revision: v8.3.zmk
   self:
     path: config
