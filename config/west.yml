@@ -7,6 +7,9 @@ manifest:
     - name: lvgl
       url-base: https://github.com/lvgl
   projects:
+    - name: lvgl
+      remote: lvgl
+      revision: release/v8.4
     - name: zmk
       remote: zmkfirmware
       revision: v0.2
@@ -14,8 +17,5 @@ manifest:
     - name: nice-view-gem
       remote: Furash 
       revision: main 
-    - name: lvgl
-      remote: lvgl
-      revision: v8.4
   self:
     path: config
