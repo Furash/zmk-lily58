@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: nice-view-gem
       remote: Furash 
-      revision: main 
+      revision: pinned_zmk
   self:
     path: config
