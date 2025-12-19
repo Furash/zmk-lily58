@@ -4,12 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: Furash 
       url-base: https://github.com/Furash
-    - name: lvgl
-      url-base: https://github.com/lvgl
   projects:
-    - name: lvgl
-      remote: lvgl
-      revision: release/v8.4
     - name: zmk
       remote: zmkfirmware
       revision: v0.2
